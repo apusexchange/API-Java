@@ -23,9 +23,9 @@ Language: Java
 
 <hr>
 
-## Pagamentos por cartão de crédito.
+## Pagamentos por cartão.
 
-Pagamentos utilizando número do cartão de credito e senha
+Pagamentos utilizando número do cartão e senha
 
 ### Requisição
 
