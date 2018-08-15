@@ -1,7 +1,7 @@
 # Apus
 
 SDK da plataforma de pagamento Apus. 
-Language: Java
+* Language: Java
 
 ## Principais recursos
 
