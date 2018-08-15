@@ -1,4 +1,4 @@
-# Apus
+# API-Java
 
 SDK da plataforma de pagamento Apus. 
 * Language: Java
