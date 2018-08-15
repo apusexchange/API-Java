@@ -29,7 +29,7 @@ Pagamentos utilizando número do cartão e senha
 
 ### Requisição
 
-> POST https://api.apusgo.com/v1/pay/
+> POST https://api.apus.exchange/v1/pay/
 
 ```js
 {
