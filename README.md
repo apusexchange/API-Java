@@ -1,18 +1,18 @@
 # API-Java
 
-SDK of the payment platform Apus.
+SDK da plataforma de pagamento Apus. 
 * Language: Java
 
-## Features
+## Principais recursos
 
-* [x] Payments by card.
-* [ ] Recurring payments.
-* [ ] Payments by transfer.
-* [ ] Payment inquiry.
+* [x] Pagamentos por cartão.
+* [ ] Pagamentos recorrentes.
+* [ ] Pagamentos por transferência.
+* [ ] Consulta de pagamentos.
 
 <hr>
 
-## Blockchains
+## Blockchains suportadas
 
 | Blockchain       | Constante             | Recorrente |
 |------------------|-----------------------|------------|
@@ -23,11 +23,11 @@ SDK of the payment platform Apus.
 
 <hr>
 
-## Payments by card.
+## Pagamentos por cartão.
 
-Payments using card number and password.
+Pagamentos utilizando número do cartão e senha
 
-### Request
+### Requisição
 
 > POST https://api.apus.exchange/v1/pay/
 
@@ -41,16 +41,16 @@ Payments using card number and password.
 }
 ```
  
-### Response
+### Resposta
 
 ```java
 {
     "status": true,
-    "message": "Payment accept",
+    "message": "Pagamento efetuado com sucesso!",
     "txid": "d5a82f2e8469b1d30a98cbca29c40cb732c46c6b19ab729e1785806237417153",
     "data": {
         "serial": "A666A",
-        "buyer": "Buyer Complete Name"
+        "buyer": "João Comprador"
     }
 }
 ```
