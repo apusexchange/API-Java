@@ -14,12 +14,12 @@ SDK da plataforma de pagamento Apus.
 
 ## Blockchains suportadas
 
-| Blockchain       | Constante              | Recorrente |
-|------------------|------------------------|------------|
-| Bitcoin          | Blockchain::BTC        | Sim        |
-| Decred           | CreditCard::DCR        | Sim        |
-| Ethereum         | CreditCard::ETH        | Sim        |
-| Litecoin         | CreditCard::LTC        | Sim        |
+| Blockchain       | Constante             | Recorrente |
+|------------------|-----------------------|------------|
+| Bitcoin          | Blockchain.BTC        | Sim        |
+| Decred           | CreditCard.DCR        | Sim        |
+| Ethereum         | CreditCard.ETH        | Sim        |
+| Litecoin         | CreditCard.LTC        | Sim        |
 
 <hr>
 
@@ -35,7 +35,7 @@ Pagamentos utilizando número do cartão e senha
 {
   "card": "0000111122223333",
   "password": "*******",
-  "type": Blockchain::BTC,
+  "type": Blockchain.BTC,
   "amount": 10.00,
   "currency": "BRL"
 }
