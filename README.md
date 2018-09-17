@@ -2,7 +2,7 @@
 
 ApusPayments is a plataform to make payments using criptocurrencies. 
 
-Lang: JAVA
+* Language: Java
 
 [Documentation API (v0.0.1)](https://docs.apuspayments.com/)
 
