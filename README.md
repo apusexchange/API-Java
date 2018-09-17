@@ -1,56 +1,52 @@
 # API-Java
 
-SDK da plataforma de pagamento Apus. 
-* Language: Java
+ApusPayments is a plataform to make payments using criptocurrencies. 
 
-## Principais recursos
+Lang: JAVA
 
-* [x] Pagamentos por cartão.
-* [ ] Pagamentos recorrentes.
-* [ ] Pagamentos por transferência.
-* [ ] Consulta de pagamentos.
+[Documentation API (v0.0.1)](https://docs.apuspayments.com/)
 
-<hr>
+## Examples of use 
 
-## Blockchains suportadas
-
-| Blockchain       | Constante             | Recorrente |
-|------------------|-----------------------|------------|
-| Bitcoin          | Blockchain.BTC        | Sim        |
-| Decred           | CreditCard.DCR        | Sim        |
-| Ethereum         | CreditCard.ETH        | Sim        |
-| Litecoin         | CreditCard.LTC        | Sim        |
+* [ ] Payments by card
+* [ ] Recurring payments
+* [ ] Cancel payment
+* [ ] Consult payments
+* [ ] Cryptocurrency recharge
 
 <hr>
 
-## Pagamentos por cartão.
-
-Pagamentos utilizando número do cartão e senha
-
-### Requisição
-
-> POST https://api.apus.exchange/v1/pay/
+## Payments by card
 
 ```java
-{
-  "card": "0000111122223333",
-  "password": "*******",
-  "type": Blockchain.BTC,
-  "amount": 10.00,
-  "currency": "BRL"
-}
+System.out.println("Payments by card")
 ```
- 
-### Resposta
+
+<hr>
+
+## Recurring payments
 
 ```java
-{
-    "status": true,
-    "message": "Pagamento efetuado com sucesso!",
-    "txid": "d5a82f2e8469b1d30a98cbca29c40cb732c46c6b19ab729e1785806237417153",
-    "data": {
-        "serial": "A666A",
-        "buyer": "João Comprador"
-    }
-}
+System.out.println("Recurring payments")
+```
+<hr>
+
+## Cancel payment
+
+```java
+System.out.println("Cancel payment")
+```
+<hr>
+
+## Consult payments
+
+```java
+System.out.println("Consult payments")
+```
+<hr>
+
+## Cryptocurrency recharge
+
+```java
+System.out.println("Cryptocurrency recharge")
 ```
