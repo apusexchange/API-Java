@@ -1,4 +1,4 @@
-# APUS-ANDROID
+# APUS-Java
 
 ApusPayments is a plataform to make payments using criptocurrencies.
 

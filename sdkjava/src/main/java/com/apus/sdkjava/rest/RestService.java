@@ -1,6 +1,5 @@
 package com.apus.sdkjava.rest;
 
-import com.android.volley.toolbox.Volley;
 import com.apus.sdkjava.common.JsonFormat;
 import com.apus.sdkjava.domain.response.ApusResponse;
 
@@ -11,7 +10,6 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.Iterator;
 import java.util.Map;
 
 
