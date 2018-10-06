@@ -1,8 +1,43 @@
-apply plugin: 'java-library'
+apply plugin: "java"
+apply plugin: "maven"
+
+group = "com.apus.sdkjava"
+version = 1.0
+sourceCompatibility = 1.8 // java 8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets {
+    sdkjava
+}
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar' ])
 }
 
-sourceCompatibility = "7"
-targetCompatibility = "7"
+sourceSets.all { set ->
+    def jarTask = task("${set.name}Jar", type: Jar) {
+        baseName = "$set.name"
+        from set.output
+    }
+
+    artifacts {
+        archives jarTask
+    }
+}
+
+
+
+jar {
+    from sourceSets.sdkjava.output
+}
+
+// this step is necessary when installing both jars in the local maven repository
+install {
+    repositories.mavenInstaller {
+        addFilter('sdkjava') { artifact, file -> artifact.name.endsWith('sdkjava') }
+    }
+}
