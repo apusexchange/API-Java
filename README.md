@@ -16,7 +16,9 @@ ApusPayments is a plataform to make payments using criptocurrencies.
 
 <hr>
 
-## Configuration
+## Configuration 
+
+### For gradle
 
 Add it in your root build.gradle at the end of repositories:
 
@@ -29,6 +31,9 @@ allprojects {
 }
 ```
 
+
+
+
 Add the dependency
 
 ```java
@@ -37,12 +42,34 @@ dependencies {
 }
 ```
 
+### For maven
+
+```xml
+    <repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+```
+
+Add the dependency
+
+```xml
+    <dependency>
+	    <groupId>com.github.apuspayments</groupId>
+	    <artifactId>API-Java</artifactId>
+	    <version>Tag</version>
+	</dependency>
+```
+### Call SDK
+
 * Call ApusPaymentAPI and choose environment:
      * SANDBOX
      * PRODUCTION
 
 ```java
-ApusPaymentAPI apusPaymentAPI = new ApusPaymentAPI(Environment.SANBOX)
+ApusPaymentAPI apusPaymentAPI = new ApusPaymentAPI(Environment.SANDBOX)
 ```
 
 * Set callback to handle the API function
