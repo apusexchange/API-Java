@@ -1,4 +1,4 @@
-# APUS-Java
+# APUS-Java [![](https://jitpack.io/v/apuspayments/API-Java.svg)](https://jitpack.io/#apuspayments/API-Java)
 
 ApusPayments is a plataform to make payments using criptocurrencies.
 
@@ -33,7 +33,7 @@ Add the dependency
 
 ```java
 dependencies {
-    implementation 'com.github.apuspayments:API-Java:1.0.0'
+    implementation 'com.github.apuspayments:API-Java:1.0.2'
 }
 ```
 
