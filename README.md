@@ -68,7 +68,7 @@ Add the dependency
      * PRODUCTION
 
 ```java
-ApusPaymentAPI apusPaymentAPI = new ApusPaymentAPI(Environment.SANDBOX)
+ApusPaymentAPI apusPaymentAPI = new ApusPaymentAPI(Environment.SANDBOX);
 ```
 * Set callback to handle the API function
 
@@ -83,7 +83,7 @@ apusPaymentAPI.setCallback(new RestService.ApusCallback() {
 ## Make a payments
 
 ```java
-ApusPaymentAPI apusPaymentAPI = new ApusPaymentAPI(Environment.SANDBOX)
+ApusPaymentAPI apusPaymentAPI = new ApusPaymentAPI(Environment.SANDBOX);
 
 apusPaymentAPI.start(new MakePayment.Builder()
 .withAmount(10)
@@ -99,7 +99,7 @@ apusPaymentAPI.start(new MakePayment.Builder()
 ## Make a recurring payments
 
 ```java
-ApusPaymentAPI apusPaymentAPI = new ApusPaymentAPI(Environment.SANDBOX)
+ApusPaymentAPI apusPaymentAPI = new ApusPaymentAPI(Environment.SANDBOX);
 
 apusPaymentAPI.start(new RecurringPayment.Builder()
 .withAmount(10)
@@ -116,7 +116,7 @@ apusPaymentAPI.start(new RecurringPayment.Builder()
 ## Search payments
 
 ```java
-ApusPaymentAPI apusPaymentAPI = new ApusPaymentAPI(Environment.SANDBOX)
+ApusPaymentAPI apusPaymentAPI = new ApusPaymentAPI(Environment.SANDBOX);
 
 apusPaymentAPI.start(new SearchPayment.Builder()
 .withBlockchain(BlockChain.Type.LTC)
@@ -130,7 +130,7 @@ apusPaymentAPI.start(new SearchPayment.Builder()
 ## Cancel a payment
 
 ```java
-ApusPaymentAPI apusPaymentAPI = new ApusPaymentAPI(Environment.SANDBOX)
+ApusPaymentAPI apusPaymentAPI = new ApusPaymentAPI(Environment.SANDBOX);
 
  apusPaymentAPI.start(new CancelPayment.Builder()
 .withPassWord("1234")
@@ -143,7 +143,7 @@ ApusPaymentAPI apusPaymentAPI = new ApusPaymentAPI(Environment.SANDBOX)
 ## Recharge of Crypto Balance
 
 ```java
-ApusPaymentAPI apusPaymentAPI = new ApusPaymentAPI(Environment.SANDBOX)
+ApusPaymentAPI apusPaymentAPI = new ApusPaymentAPI(Environment.SANDBOX);
 
 apusPaymentAPI.start(new RechargeCryptoBalance.Builder()
 .withAmount(10)
